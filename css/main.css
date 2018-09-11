@@ -1,0 +1,44 @@
+
+
+/* 마우스 스크롤다운 */
+#scrolldown {bottom: 30px; height: 80px; margin-left: -50px; position: absolute; left: 50%; text-align: center; width: 100px; z-index: 100;}
+#scrolldown p {
+  font: 700 0.7em/1em 'Avenir',sans-serif;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  color: #fff;
+}
+#scrolldown > p {
+  text-transform: uppercase;
+  text-indent: 3px;
+}
+.mouse {
+  border: 2px solid #fff;
+  border-radius: 13px;
+  display: block;
+  height: 46px;
+  left: 50%;
+  margin: 20px 0 0 -13px;
+  position: absolute;
+  width: 26px;
+}
+.mouse span {
+  display: block;
+  font-size: 1.5em;
+  margin: 6px auto;
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+
+/* main */

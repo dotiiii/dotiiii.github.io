@@ -55,3 +55,34 @@ jQuery(document).ready(function($){
         );
 	}
 });
+
+// 마우스휠
+
+var win_h = $(window).height();
+ 
+$('.section').each(function(index){
+ 
+    $(this).attr("data-index",win_h * index);
+ 
+});
+ 
+$('.section').on("mousewheel",function(e){
+ 
+    var sectionPos = parseInt($(this).attr("data-index"));
+ 
+    if(e.originalEvent.wheelDelta >= 0) {
+ 
+        $("html,body").stop().animate({scrollTop:sectionPos - win_h});
+ 
+    return false;
+ 
+    } else if (e.originalEvent.wheelDelta < 0) {
+ 
+        $("html,body").stop().animate({scrollTop:sectionPos + win_h});
+ 
+    return false; 
+ 
+    }
+ 
+});
+

@@ -7,26 +7,7 @@ Primary style
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Sintony", sans-serif;
-  color: #eaf2e3;
-  background-color: #3a2c41;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  color: #c0a672;
-  text-decoration: none;
-}
-
-.cd-image-replace {
-  /* replace text with image */
+.cd-image-replace { /* replace text with image */
   display: inline-block;
   overflow: hidden;
   text-indent: 100%;
@@ -354,14 +335,14 @@ Vertical navigation
     -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
     -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
     -o-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
-    transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+    transform: translateX(-50%) translateY(-6.5em) scale(0.01);
   }
   .cd-vertical-nav li:nth-of-type(5) a::before {
     -webkit-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
     -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
     -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
     -o-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
-    transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+    transform: translateX(-50%) translateY(-6.5em) scale(0.25);
   }
   .cd-vertical-nav .label {
     display: block;
@@ -465,7 +446,6 @@ Content Sections - basic style
   bottom: 20px;
   width: 44px;
   height: 44px;
-  background: url(../img/cd-arrow-bottom.svg) no-repeat center center;
 }
 
 /* -------------------------------- 
