@@ -416,8 +416,8 @@ Content Sections - basic style
   height: 100vh;
   background: #3a2c41;
 }
-.cd-section:nth-of-type(even) {
-  background-color: #70557e;
+.cd-section:nth-of-type(2) {
+  background-color: #fff;
 }
 .cd-section > div {
   /* vertically align <div> inside <section> */

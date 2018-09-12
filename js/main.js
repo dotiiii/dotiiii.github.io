@@ -58,31 +58,31 @@ jQuery(document).ready(function($){
 
 // 마우스휠
 
-var win_h = $(window).height();
+//var win_h = $(window).height();
  
-$('.section').each(function(index){
+//$('.section').each(function(index){
  
-    $(this).attr("data-index",win_h * index);
+//    $(this).attr("data-index",win_h * index);
  
-});
+//});
  
-$('.section').on("mousewheel",function(e){
+//$('.section').on("mousewheel",function(e){
  
-    var sectionPos = parseInt($(this).attr("data-index"));
+//    var sectionPos = parseInt($(this).attr("data-index"));
  
-    if(e.originalEvent.wheelDelta >= 0) {
+//    if(e.originalEvent.wheelDelta >= 0) {
  
-        $("html,body").stop().animate({scrollTop:sectionPos - win_h});
+//        $("html,body").stop().animate({scrollTop:sectionPos - win_h});
  
-    return false;
+ //   return false;
  
-    } else if (e.originalEvent.wheelDelta < 0) {
+  //  } else if (e.originalEvent.wheelDelta < 0) {
  
-        $("html,body").stop().animate({scrollTop:sectionPos + win_h});
+  //      $("html,body").stop().animate({scrollTop:sectionPos + win_h});
  
-    return false; 
+ //  return false; 
  
-    }
+ //   }
  
-});
+//});
 
