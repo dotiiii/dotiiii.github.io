@@ -435,20 +435,21 @@ Content Sections - basic style
 .cd-section h1 b, .cd-section h2 b {
   color: #584c5e;
 }
-.cd-section p {
+/*.cd-section p {
   margin: 1em auto 0;
   line-height: 1.6;
   width: 90%;
   max-width: 680px;
   color: rgba(234, 242, 227, 0.6);
+ */
 }
 @media only screen and (min-width: 800px) {
   .cd-section h1, .cd-section h2 {
     font-size: 3rem;
   }
-  .cd-section p {
+  /*.cd-section p {
     font-size: 2rem;
-  }
+  }*/
 }
 
 .cd-scroll-down {

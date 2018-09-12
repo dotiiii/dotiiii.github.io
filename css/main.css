@@ -36,7 +36,7 @@
 .slider .jquery-reslider .slider-dots li.active { background-color: #ffffff; }
 
 .slider_text{position:absolute; top:25%; left:50%; margin-left:-550px; padding-left:170px; width:1100px; text-align:left;  color:#fff; transform: translateY(-50%);  margin-top:90px;  background:url('../img/main_tit_bg.png') top left no-repeat; }
-.slider_text h1 {font-size:4.2em; line-height:120%;font-weight:bold; padding-bottom:20px; letter-spacing:-0.7pt; padding-top:100px;}
+.slider_text h1 {font-size:4.2em; line-height:120%; font-weight:bold; padding-bottom:20px; letter-spacing:-0.7pt; padding-top:100px;}
 .slider_text h1.long_tit {font-size:3.5em; }
 .slider_text h2{font-size:1.5em;}
 
@@ -55,8 +55,8 @@
 /* Section2 - 나만의 맞춤형 비지니스제트 */
 #section2 {padding-top:80px;}
 #section2 .secIn_con{ width:100%;}
-#section2 h2{color:#080808; letter-spacing:-2pt; background:url('../img/title_line_b.png') center bottom no-repeat; padding-bottom:20px;}
-#section2 h2 span{font-weight:bold;}
+#section2 h2, #section3 h2{color:#080808; letter-spacing:-2pt; background:url('../img/title_line_b.png') center bottom no-repeat; padding-bottom:20px;}
+#section2 h2 span, #section3 h2 span{font-weight:bold;}
 #section2 .left_recom{margin-top:40px; text-align:left; position:relative; width:100%; height:370px; border-bottom:1px solid #ddd;}
 #section2 .left_recom dl{max-width:1100px; margin:0 auto; position:relative;}
 #section2 .left_recom dt{ z-index:1; left:0; text-align:left; float:left;}
@@ -64,17 +64,39 @@
 #section2 .left_recom dd{position:absolute; float:left; left:50%;  font-size:14px; color:#444;  border:1px solid #ddd; padding:60px 80px; width:550px; height:280px; z-index:2; background:#fff; margin-top:90px;}
 #section2 .left_recom dd h3{font-size:30px; color:#000; letter-spacing:-1.2pt; padding-bottom:20px}
 #section2 .left_recom dd span{font-size:1.2em; color:#666;}
-#section2 .left_recom dd p a.more{clear:both; bottom:0; font-size:13px; text-decoration:underline; }
+#section2 .left_recom dd p.more{width:100%;  margin: 0 auto 0}
+#section2 .left_recom dd p.more a{clear:both; bottom:0; font-size:13px; text-decoration:underline; background:url('../img/info_arrow.png') top left no-repeat; padding:5px 0 40px 50px}
+#section2 .left_recom dd p.more a:hover{background-position-x:7px; -webkit-transition:.3s, -webkit-transform .3s;     transition: .3s, transform .3s}
 
 #section2 .right_recom{border-top:1px solid #ddd; text-align:left; position:relative;}
 #section2 .right_recom{margin-top:40px; text-align:right; position:relative; width:100%; height:370px; border-top:1px solid #ddd;}
 #section2 .right_recom dl{max-width:1100px; margin:0 auto; position:relative;}
 #section2 .right_recom dt{ z-index:1; right:0; text-align:left; float:right;}
-#section2 .right_recom dt img{width:100%; max-width:590px;}
+#section2 .right_recom dt img{width:100%; }
 #section2 .right_recom dd{position:absolute; float:right; right:50%;  font-size:14px; color:#444;  border:1px solid #ddd; padding:60px 80px; width:550px; height:280px; z-index:2; background:#fff; margin-top:40px;}
 #section2 .right_recom dd h3{font-size:30px; color:#000; letter-spacing:-1.2pt; padding-bottom:20px}
 #section2 .right_recom dd span{font-size:1.2em; color:#666;}
-#section2 .right_recom dd p a.more{clear:both; bottom:0; font-size:13px; text-decoration:underline; }
+#section2 .right_recom dd p.more{width:100%;  margin: 0 auto 0}
+#section2 .right_recom dd p.more a{clear:both; bottom:0; font-size:13px; text-decoration:underline; background:url('../img/info_arrow.png') top left no-repeat; padding:5px 0 40px 50px}
+#section2 .right_recom dd p.more a:hover{background-position-x:7px; -webkit-transition:.3s, -webkit-transform .3s;     transition: .3s, transform .3s}
+
+
+/* Section3 - 이용안내 */
+#section3 {padding-top:80px; background: url('../img/util_bg.jpg') center top no-repeat; background-position: 50% 50%;  background-size: cover;  }
+#section3 .secIn_con{ width:100%; }
+
+.card {position: relative; width: 280px; display: inline-block; margin: auto; margin-top:40px; margin-right:20px; margin-bottom:20px; text-align: center; }
+.card:nth-last-child{margin-right:0;}
+.card__image {position: relative; height: 450px; margin-bottom: 60px;  width:100%;}
+.card__image:hover{transform: translate(0, -15px);  transition:.3s ease-in-out;
+	-webkit-transform:translate(0, -15px);
+	-moz-transform:translate(0, -15px);
+　	-ms-transform:translate(0, -15px);
+　	-o-transform:translate(0, -15px);}
+.card__date{font-weight:bold; font-size:1.5rem; letter-spacing:-1.2pr; color:#000; margin-bottom:10px;}
+.card__desc{font-size:1rem; color:#666; text-align: center; padding: 0 10px; height:5rem;}
+.card__button{display:block; width:60%; text-decoration:none; border:1px solid #2257af; color:#2257af; padding:10px 20px; margin: 30px auto 25px auto; text-transform:uppercase; font-size:0.9rem;  border-radius:5px; }
+.card__button:hover{background-color:#2257af; color:#fff;  -webkit-transition:.5s, -webkit-transform .5s;     transition: .5s, transform .5s}
 
 
 
@@ -92,7 +114,12 @@
 	.sec1_inquiry{width:98%; position:absolute; bottom:30%; left:0; margin:0; text-align:center; padding-left:0; background-size:50%; margin:0 1%}
 	.secIn_con{height:100%; min-height:568px;  position:relative;}
 	
-
+	#section2 .secIn_con{padding-bottom:3em;}
+	#section2 .left_recom dt, #section2 .right_recom dt {padding:0 5%;}
+	#section2 .left_recom dd p.more, #section2 .right_recom dd p.more{width:100%;  margin:1em auto 0}
+	
+	.card {position: relative; overflow:hidden; width: 23%; height:200px display: table_cell; margin: auto; margin-top:40px; margin-right:2%; margin-bottom:20px; text-align: center; }
+	.card__image {position: relative; overflow:hidden; height: 300px; margin-bottom: 40px;  width:100%;}
 	
 }
 
@@ -115,9 +142,10 @@
 	.sec1_inquiry li:nth-child(3), .sec1_inquiry li:nth-child(4), .sec1_inquiry li:nth-child(5){width:33.3%}
 	.inquiry_btn {clear:both; width:100%; }
 
+	
 	#section2 .left_recom{text-align:center; width:100%; border:0;}
 	#section2 .left_recom dl{width:100%;}
-	#section2 .left_recom dt{ z-index:1;  margin:0 auto; max-width:590px;}
+	#section2 .left_recom dt{ z-index:1; float:left}
 	#section2 .left_recom dt img{width:100%; text-align:center;}
 	#section2 .left_recom dd{position:relative; float:left; left:0%;  margin-top:0;font-size:14px; color:#444;  border:none; padding:20px 0;  width:100%; clear:both;}
 	#section2 .left_recom dd h3{font-size:30px; color:#000; letter-spacing:-1.2pt; padding-bottom:20px}
@@ -128,12 +156,14 @@
 	#section2 .right_recom dl{width:100%;}
 	#section2 .right_recom dt{ z-index:1;  float:left;}
 	#section2 .right_recom dt img{width:100%; text-align:center;}
-	#section2 .right_recom dd{position:relative; float:left; left:0%;  font-size:14px; color:#444;  border:none; padding:20px 0 ; width:100%; clear:both;}
+	#section2 .right_recom dd{position:relative; float:left; left:0%;  font-size:14px; color:#444;  border:none; padding:0 ; width:100%; clear:both;}
 	#section2 .right_recom dd h3{font-size:30px; color:#000; letter-spacing:-1.2pt; padding-bottom:20px}
 	#section2 .right_recom dd span{font-size:1.2em; color:#666;}
 	#section2 .right_recom dd p a.more{clear:both; bottom:0; font-size:13px; text-decoration:underline; }
 	
-
+		
+ 	.card {position: relative; float:left;  width: 48%; display: block; margin-right: 10px; }
+	.card__desc{font-size:1rem;  height:3rem;}
 
 }
 
@@ -144,8 +174,8 @@
 *******************************************************************************/
 @media all and (max-width:640px){
 
-body,html {font-size:13px;}
-
+	body,html {font-size:13px;}
+	.card{width:48%; margin-left:auto; margin-right:2%;}
 
 }
 
