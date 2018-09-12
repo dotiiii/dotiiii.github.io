@@ -1,5 +1,3 @@
-
-
 /* 마우스 스크롤다운 */
 #scrolldown {bottom: 30px; height: 80px; margin-left: -50px; position: absolute; left: 50%; text-align: center; width: 100px; z-index: 100;}
 #scrolldown p {
@@ -10,35 +8,102 @@
   animation-name: scroll;
   color: #fff;
 }
-#scrolldown > p {
-  text-transform: uppercase;
-  text-indent: 3px;
-}
-.mouse {
-  border: 2px solid #fff;
-  border-radius: 13px;
-  display: block;
-  height: 46px;
-  left: 50%;
-  margin: 20px 0 0 -13px;
-  position: absolute;
-  width: 26px;
-}
-.mouse span {
-  display: block;
-  font-size: 1.5em;
-  margin: 6px auto;
-}
+#scrolldown > p { text-transform: uppercase;  text-indent: 3px;}
+.mouse { border: 2px solid #fff; border-radius: 13px; display: block; height: 46px; left: 50%; margin: 20px 0 0 -13px;  position: absolute; width: 26px;}
+.mouse span {display: block; font-size: 1.5em;  margin: 6px auto;}
 @keyframes scroll {
   0% {
-    opacity: 1;
-    transform: translateY(0px);
+    opacity: 1;   transform: translateY(0px);
   }
   100% {
-    opacity: 0;
-    transform: translateY(10px);
+    opacity: 0;   transform: translateY(10px);
   }
 }
 
 
-/* main */
+.secIn_con{height:100%; min-height:1080px;  position:relative; overflow:hidden;}
+
+
+/* Section1 - main 슬라이드 */
+
+.slider { float: left; z-index:1;}
+.slider .jquery-reslider .slider-block { width: 100%; height: 100%; position: absolute; z-index: 1;  background-position: 50% 50%;  background-size: cover;  opacity: 0;  top:0;}
+.slider .jquery-reslider .slider-direction { width: 60px;  height: 60px;  position: absolute;  top: 45%;  z-index: 0;  cursor: pointer;}
+.slider .jquery-reslider .slider-direction.slider-direction-prev { left: 20px;  background: url('../images/prev.png') no-repeat;  background-size:100%;}
+.slider .jquery-reslider .slider-direction.slider-direction-next { right: 20px; background: url('../images/next.png') no-repeat;}
+.slider .jquery-reslider .slider-dots { position: absolute;  width: 100%;  text-align: center;  bottom: 50%;}
+.slider .jquery-reslider .slider-dots li { width: 30px; height: 5px; display: inline-block; margin: 5px; background:rgba(255, 255, 255, 0.5);  cursor: pointer;}
+.slider .jquery-reslider .slider-dots li.active { background-color: #ffffff; }
+
+.slider_text{position:absolute; top:25%; left:50%; margin-left:-550px; padding-left:170px; width:1100px; text-align:left;  color:#fff; transform: translateY(-50%);  margin-top:90px;  background:url('../img/main_tit_bg.png') top left no-repeat; }
+.slider_text h1 {font-size:4.2em; line-height:120%;font-weight:bold; padding-bottom:20px; letter-spacing:-0.7pt; padding-top:100px;}
+.slider_text h1.long_tit {font-size:3.5em; }
+.slider_text h2{font-size:1.5em;}
+
+/* Section1 - 예약 */
+
+/*.sec1_inquiry{height:60px; width:100%; max-width:1100px; background:#fff; margin:0 auto; z-index:999; bottom:20%;}*/
+.sec1_inquiry{position:absolute; bottom:35%; left:50%; margin-left:-550px; width:100%; max-width:1100px; height:60px; text-align:left;  background:#fff; transform: translateY(-50%);  margin-top:90px;  z-index:9999; }
+.sec1_inquiry li{float:left; width:18%; text-align:left; border-right:1px dotted #ccc; padding:20px 0; overflow: hidden; padding-left:60px}
+.sec1_inquiry li:nth-child(1){background:url('../img/icon_sch_s.gif') 30px no-repeat; }
+.sec1_inquiry li:nth-child(2){background:url('../img/icon_time_s.gif') 30px no-repeat; }
+.sec1_inquiry li:nth-child(3), .sec1_inquiry li:nth-child(4){background:url('../img/icon_pin_s.gif') 30px no-repeat; }
+.sec1_inquiry li:nth-child(5){background:url('../img/icon_people_s.gif') 30px no-repeat; border-right:0;}
+.inquiry_btn{float:right; height:60px; line-height:60px; background:#2257af; border:none; color:#fff; width:10%; cursor:pointer;}
+.inquiry_btn:hover{background:#144494; -webkit-transition:.5s, -webkit-transform .5s;     transition: .5s, transform .5s}
+
+
+
+/*******************************************************************************
+	@media ~980px
+*******************************************************************************/
+@media all and (max-width:980px){
+
+	.slider_text{width:100%; position:absolute; top:30%; left:0; margin:0; text-align:center; padding-left:0; background-size:50%;}
+	.slider_text h1{padding-top:120px;}
+	.slider_text h1, .slider_text h1.long_tit {font-size:3em;}
+	.slider_text h2{font-size:1.2em;}
+	.sec1_inquiry{width:98%; position:absolute; bottom:30%; left:0; margin:0; text-align:center; padding-left:0; background-size:50%; margin:0 1%}
+	.secIn_con{height:100%; min-height:568px;  position:relative;}
+}
+
+
+
+/*******************************************************************************
+	@media ~768px
+*******************************************************************************/
+@media screen and (max-width: 768px) {
+	.slider .jquery-reslider .slider-direction { zoom: .8; }
+	.slider .jquery-reslider .slider-dots { position: absolute; }
+
+	.slider_text{width:100%; position:absolute; top:20%; left:0; margin:0; text-align:center; background:none;}
+	.slider_text h1, .slider_text h1.long_tit {font-size:1.8em;}
+	.slider_text h2{font-size:1.2em;}
+	
+	.sec1_inquiry li{float:left; width:20%; text-align:left; border-right:1px dotted #ccc; padding:20px 0; overflow: hidden; padding-left:10px; }
+	.sec1_inquiry li:nth-child(1), .sec1_inquiry li:nth-child(2), .sec1_inquiry li:nth-child(3), .sec1_inquiry li:nth-child(4), .sec1_inquiry li:nth-child(5) {background:none;}
+	.inquiry_btn {clear:both; width:100%; }
+
+
+}
+
+
+
+/*******************************************************************************
+	@media ~640px
+*******************************************************************************/
+@media all and (max-width:640px){
+
+body,html {font-size:13px;}
+
+
+}
+
+/*******************************************************************************
+	@media ~460px
+*******************************************************************************/
+@media all and (max-width:460px){
+
+
+}
+
