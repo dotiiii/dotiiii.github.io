@@ -43,7 +43,7 @@
 /* Section1 - 예약 */
 
 /*.sec1_inquiry{height:60px; width:100%; max-width:1100px; background:#fff; margin:0 auto; z-index:999; bottom:20%;}*/
-.sec1_inquiry{position:absolute; bottom:35%; left:50%; margin-left:-550px; width:100%; max-width:1100px; height:60px; text-align:left;  background:#fff; transform: translateY(-50%);  margin-top:90px;  z-index:9999; }
+.sec1_inquiry{position:absolute; bottom:35%; left:50%; margin-left:-550px; width:100%; max-width:1100px; height:60px; text-align:left;  background:#fff; transform: translateY(-50%);  margin-top:90px;  z-index:99; }
 .sec1_inquiry li{float:left; width:18%; text-align:left; border-right:1px dotted #ccc; padding:20px 0; overflow: hidden; padding-left:60px}
 .sec1_inquiry li:nth-child(1){background:url('../img/icon_sch_s.gif') 30px no-repeat; }
 .sec1_inquiry li:nth-child(2){background:url('../img/icon_time_s.gif') 30px no-repeat; }
