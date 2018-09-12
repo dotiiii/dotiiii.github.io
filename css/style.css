@@ -23,13 +23,13 @@ Navigation trigger - visible on small devices only
 .cd-nav-trigger {
   display: block;
   position: fixed;
-  z-index: 99;
+  z-index: 999;
   bottom: 30px;
   right: 5%;
   height: 44px;
   width: 44px;
   border-radius: 0.25em;
-  background: rgba(234, 242, 227, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   /* reset button style */
   cursor: pointer;
   -webkit-appearance: none;
@@ -86,7 +86,7 @@ Vertical navigation
 -------------------------------- */
 .cd-vertical-nav {
   position: fixed;
-  z-index: 99;
+  z-index: 999;
   right: 5%;
   bottom: 30px;
   width: 90%;
@@ -107,7 +107,7 @@ Vertical navigation
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
   border-radius: 0.25em;
-  background-color: rgba(234, 242, 227, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .cd-vertical-nav a {
   display: block;
@@ -117,7 +117,7 @@ Vertical navigation
   border-bottom: 1px solid rgba(58, 44, 65, 0.1);
 }
 .cd-vertical-nav a.active {
-  color: #c0a672;
+  color: #2257af;
 }
 .cd-vertical-nav.open {
   -webkit-transform: scale(1);
