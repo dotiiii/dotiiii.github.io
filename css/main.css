@@ -31,7 +31,7 @@
 .slider .jquery-reslider .slider-direction { width: 60px;  height: 60px;  position: absolute;  top: 45%;  z-index: 0;  cursor: pointer;}
 .slider .jquery-reslider .slider-direction.slider-direction-prev { left: 20px;  background: url('../images/prev.png') no-repeat;  background-size:100%;}
 .slider .jquery-reslider .slider-direction.slider-direction-next { right: 20px; background: url('../images/next.png') no-repeat;}
-.slider .jquery-reslider .slider-dots { position: absolute;  width: 100%;  text-align: center;  bottom: 50%;}
+.slider .jquery-reslider .slider-dots { position: absolute;  width: 100%;  text-align: center;  bottom: 47%;}
 .slider .jquery-reslider .slider-dots li { width: 30px; height: 5px; display: inline-block; margin: 5px; background:rgba(255, 255, 255, 0.5);  cursor: pointer;}
 .slider .jquery-reslider .slider-dots li.active { background-color: #ffffff; }
 
