@@ -55,8 +55,8 @@
 /* Section2 - 나만의 맞춤형 비지니스제트 */
 #section2 {padding-top:80px;}
 #section2 .secIn_con{ width:100%;}
-#section2 h2, #section3 h2{color:#080808; letter-spacing:-2pt; background:url('../img/title_line_b.png') center bottom no-repeat; padding-bottom:25px;}
-#section2 h2 span, #section3 h2 span, #section5 h2 span{font-weight:bold;}
+#section2 h2, #section3 h2, #section6 h2  {color:#080808; letter-spacing:-2pt; background:url('../img/title_line_b.png') center bottom no-repeat; padding-bottom:25px;}
+#section2 h2 span, #section3 h2 span, #section5 h2 span, #section6 h2{font-weight:bold;}
 #section2 .left_recom{margin-top:40px; text-align:left; position:relative; width:100%; height:370px; border-bottom:1px solid #ddd;}
 #section2 .left_recom dl{max-width:1100px; margin:0 auto; position:relative;}
 #section2 .left_recom dt{ z-index:1; left:0; text-align:left; float:left;}
@@ -82,7 +82,7 @@
 
 
 /* Section3 - 이용안내 */
-#section3 {padding-top:80px; background: url('../img/util_bg.jpg') center top no-repeat; background-position: 50% 50%;  background-size: cover;  }
+#section3 {padding-top:80px; background: url('../img/util_bg.jpg') center top no-repeat; background-position: 50% 50%;  background-size: cover; }
 #section3 .secIn_con{ width:100%; max-width:1100px; margin:0 auto;}
 
 .card {position: relative; max-width: 250px; display: inline-block; margin: auto; margin-top:40px; margin-right:20px; margin-bottom:20px; text-align: center; }
@@ -119,6 +119,32 @@
 .ad_num li dd.ad_tit{font-size:1.5rem; line-height:120%; padding-bottom:.5em}
 .ad_num li dd.ad_num{font-size:4rem; font-weight:bold; line-height:100%;}
 
+
+/* Section6 - Event */
+#section6 {padding-top:80px; background: url('../img/event_bg.jpg') center top no-repeat; background-position: 50% 50%;  background-size: cover; }
+#section6 h3{padding-top:20px; padding-bottom:40px;}
+
+
+/* footer */
+#footer{background:#4b4f60; width:100%;}
+#footer .sitemap {position:relative; overflow: hidden; max-width:1100px; margin:0 auto; padding:2em 0; border-bottom: 1px solid #6d6f7d;}
+#footer .sitemap li{float:left; width:20%; color:#fff;}
+#footer .sitemap li dt{font-size:1.2em; padding-bottom:1em;}
+#footer .sitemap li dd a{color:#fff;}
+
+#footer .copyright{position:relative; overflow:hidden; clear:both; padding:2em 1em; max-width:1100px; margin:0 auto; color:#fff;}
+#footer .copyright p{float:left; padding-right:2em;}
+#footer .copyright .copy01 li{float:left; color:#fff; padding-right:2em; }
+#footer .copyright .copy01 li a{clear:both; color:#fff;}
+#footer .copyright .copy02 {float:left; width:80%; margin-top:1em;}
+
+.sns{float:right; position:absolute; right:0; top:4em;}
+.sns li {float:left; padding-right:10px;}
+
+	
+
+
+
 /*******************************************************************************
 	@media ~1024px
 *******************************************************************************/
@@ -126,7 +152,7 @@
 	.card {position: relative; overflow:hidden; width: 20%; height:200px display: table_cell; margin: auto; margin-top:40px; margin-right:2%; margin-bottom:20px; text-align: center; }
 	.card:nth-child(5){margin-right:0;}
 	.card__image {position: relative; overflow:hidden; height: 300px; margin-bottom: 40px;  width:100%;}
-	
+	#footer .sns {position:relative; display:block; clear:both; top:0;}
 }
 
 
@@ -159,7 +185,9 @@
 	.ad_num li dd.ad_tit{font-size:1.5rem; line-height:120%; padding-bottom:.5em}
 	.ad_num li dd.ad_num{font-size:4rem; font-weight:bold; line-height:100%;}
 	
-	
+	#footer .sitemap {display:none;}
+	#footer .copyright p{display:none;}
+
 }
 
 
@@ -203,7 +231,7 @@
 		
  	.card {position: relative; float:left;  width: 46%; display: block;0 1%; }
 	.card__desc{font-size:1rem;  height:3rem;}
-	.card__button{display:block; width:80%;
+	.card__button{display:block; width:80%;}
 
 }
 
@@ -219,8 +247,10 @@
 	.card{width:48%; margin-left:auto; margin:30px 1%;}
 	.card__desc{display:none;}
 	.card__image{height:100%; overflow:hidden; width:100%;}
+	#section5  video{margin-bottom:50px;}
+	.ad_num li dt img{width:50%}
 	.ad_num li dd.ad_tit{font-size:1.2rem;}
-	.ad_num li dd.ad_num{font-size:3rem;}
+	.ad_num li dd.ad_num{font-size:2.8rem;}
 
 }
 
