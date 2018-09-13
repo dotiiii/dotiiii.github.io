@@ -55,8 +55,8 @@
 /* Section2 - 나만의 맞춤형 비지니스제트 */
 #section2 {padding-top:80px;}
 #section2 .secIn_con{ width:100%;}
-#section2 h2, #section3 h2{color:#080808; letter-spacing:-2pt; background:url('../img/title_line_b.png') center bottom no-repeat; padding-bottom:20px;}
-#section2 h2 span, #section3 h2 span{font-weight:bold;}
+#section2 h2, #section3 h2{color:#080808; letter-spacing:-2pt; background:url('../img/title_line_b.png') center bottom no-repeat; padding-bottom:25px;}
+#section2 h2 span, #section3 h2 span, #section5 h2 span{font-weight:bold;}
 #section2 .left_recom{margin-top:40px; text-align:left; position:relative; width:100%; height:370px; border-bottom:1px solid #ddd;}
 #section2 .left_recom dl{max-width:1100px; margin:0 auto; position:relative;}
 #section2 .left_recom dt{ z-index:1; left:0; text-align:left; float:left;}
@@ -64,7 +64,7 @@
 #section2 .left_recom dd{position:absolute; float:left; left:50%;  font-size:14px; color:#444;  border:1px solid #ddd; padding:60px 80px; width:550px; height:280px; z-index:2; background:#fff; margin-top:90px;}
 #section2 .left_recom dd h3{font-size:30px; color:#000; letter-spacing:-1.2pt; padding-bottom:20px}
 #section2 .left_recom dd span{font-size:1.2em; color:#666;}
-#section2 .left_recom dd p.more{width:100%;  margin: 0 auto 0}
+#section2 .left_recom dd p.more{width:100%;  margin:1em auto 0}
 #section2 .left_recom dd p.more a{clear:both; bottom:0; font-size:13px; text-decoration:underline; background:url('../img/info_arrow.png') top left no-repeat; padding:5px 0 40px 50px}
 #section2 .left_recom dd p.more a:hover{background-position-x:7px; -webkit-transition:.3s, -webkit-transform .3s;     transition: .3s, transform .3s}
 
@@ -76,17 +76,17 @@
 #section2 .right_recom dd{position:absolute; float:right; right:50%;  font-size:14px; color:#444;  border:1px solid #ddd; padding:60px 80px; width:550px; height:280px; z-index:2; background:#fff; margin-top:40px;}
 #section2 .right_recom dd h3{font-size:30px; color:#000; letter-spacing:-1.2pt; padding-bottom:20px}
 #section2 .right_recom dd span{font-size:1.2em; color:#666;}
-#section2 .right_recom dd p.more{width:100%;  margin: 0 auto 0}
+#section2 .right_recom dd p.more{width:100%;  margin: 1em auto 0}
 #section2 .right_recom dd p.more a{clear:both; bottom:0; font-size:13px; text-decoration:underline; background:url('../img/info_arrow.png') top left no-repeat; padding:5px 0 40px 50px}
 #section2 .right_recom dd p.more a:hover{background-position-x:7px; -webkit-transition:.3s, -webkit-transform .3s;     transition: .3s, transform .3s}
 
 
 /* Section3 - 이용안내 */
 #section3 {padding-top:80px; background: url('../img/util_bg.jpg') center top no-repeat; background-position: 50% 50%;  background-size: cover;  }
-#section3 .secIn_con{ width:100%; }
+#section3 .secIn_con{ width:100%; max-width:1100px; margin:0 auto;}
 
-.card {position: relative; width: 280px; display: inline-block; margin: auto; margin-top:40px; margin-right:20px; margin-bottom:20px; text-align: center; }
-.card:nth-last-child{margin-right:0;}
+.card {position: relative; max-width: 250px; display: inline-block; margin: auto; margin-top:40px; margin-right:20px; margin-bottom:20px; text-align: center; }
+.card:nth-child(5){margin-right:0;}
 .card__image {position: relative; height: 450px; margin-bottom: 60px;  width:100%;}
 .card__image:hover{transform: translate(0, -15px);  transition:.3s ease-in-out;
 	-webkit-transform:translate(0, -15px);
@@ -95,10 +95,39 @@
 　	-o-transform:translate(0, -15px);}
 .card__date{font-weight:bold; font-size:1.5rem; letter-spacing:-1.2pr; color:#000; margin-bottom:10px;}
 .card__desc{font-size:1rem; color:#666; text-align: center; padding: 0 10px; height:5rem;}
-.card__button{display:block; width:60%; text-decoration:none; border:1px solid #2257af; color:#2257af; padding:10px 20px; margin: 30px auto 25px auto; text-transform:uppercase; font-size:0.9rem;  border-radius:5px; }
+.card__button{display:block; width:60%; text-decoration:none; border:1px solid #2257af; color:#2257af; padding:10px 20px; margin: 30px auto 25px auto; text-transform:uppercase; font-size:1rem;  border-radius:5px; }
 .card__button:hover{background-color:#2257af; color:#fff;  -webkit-transition:.5s, -webkit-transform .5s;     transition: .5s, transform .5s}
 
 
+/* Section4 - 부가서비스 */
+#section4 {padding-top:80px; background: url('../img/service_bg.jpg') center top no-repeat; background-position: 50% 0;  }
+#section4 h2, #section4 h3{color:#fff;}
+
+
+/* Section5 - 홍보 */
+#section5 {padding-top:80px; background: url('../img/ad_bg.jpg') center top no-repeat; background-position: 50% 50%;  background-size: cover;  }
+#section5 .secIn_con{ width:100%;}
+#section5 h2, #section5 h2{color:#fff; letter-spacing:-2pt; background:url('../img/title_line_w.png') center bottom no-repeat; padding-bottom:25px;}
+#section5  video {margin-top:40px; width:100%;  max-width:730px;  height:auto; margin-bottom:90px; -webkit-box-shadow: 0px 27px 42px -15px rgba(0,0,0,0.75);-moz-box-shadow: 0px 27px 42px -15px rgba(0,0,0,0.75);box-shadow: 0px 27px 42px -15px rgba(0,0,0,0.75);}
+
+.ad_num{width:100%; max-width:900px; margin:0 auto; color:#fff;}
+
+.ad_num li{float:left; text-align:left; width:50%; }
+.ad_num li:first-child dl{padding-right:20%;  border-right:1px solid rgba(255, 255, 255, 0.3)}
+.ad_num li:nth-child(2) dl{padding-left:30%;}
+.ad_num li dt{float:left; padding-right:2em; padding-top:.5em;}
+.ad_num li dd.ad_tit{font-size:1.5rem; line-height:120%; padding-bottom:.5em}
+.ad_num li dd.ad_num{font-size:4rem; font-weight:bold; line-height:100%;}
+
+/*******************************************************************************
+	@media ~1024px
+*******************************************************************************/
+@media all and (max-width:1024px){
+	.card {position: relative; overflow:hidden; width: 20%; height:200px display: table_cell; margin: auto; margin-top:40px; margin-right:2%; margin-bottom:20px; text-align: center; }
+	.card:nth-child(5){margin-right:0;}
+	.card__image {position: relative; overflow:hidden; height: 300px; margin-bottom: 40px;  width:100%;}
+	
+}
 
 
 /*******************************************************************************
@@ -115,11 +144,21 @@
 	.secIn_con{height:100%; min-height:568px;  position:relative;}
 	
 	#section2 .secIn_con{padding-bottom:3em;}
-	#section2 .left_recom dt, #section2 .right_recom dt {padding:0 5%;}
+	#section2 .left_recom dt, #section2 .right_recom dt {padding:0 10%; text-align:center;}
 	#section2 .left_recom dd p.more, #section2 .right_recom dd p.more{width:100%;  margin:1em auto 0}
+	#section2 .right_recom dd{left:0; padding:60px 40px 60px 0; width:400px}
 	
-	.card {position: relative; overflow:hidden; width: 23%; height:200px display: table_cell; margin: auto; margin-top:40px; margin-right:2%; margin-bottom:20px; text-align: center; }
+	.card {position: relative; overflow:hidden; width: 23%; height:200px display: table_cell; margin: 40px 1%; margin-bottom:20px; text-align: center; }
 	.card__image {position: relative; overflow:hidden; height: 300px; margin-bottom: 40px;  width:100%;}
+	
+	.ad_num li{text-align:center; }
+	.ad_num li:first-child dl{padding-right:0;  }
+	.ad_num li:nth-child(2) dl{padding-left:0;}
+	.ad_num li dt{float:none; padding-bottom: 1.2em; text-align:center; padding-left:1em;}
+	.ad_num li dd {clear:both;}
+	.ad_num li dd.ad_tit{font-size:1.5rem; line-height:120%; padding-bottom:.5em}
+	.ad_num li dd.ad_num{font-size:4rem; font-weight:bold; line-height:100%;}
+	
 	
 }
 
@@ -162,8 +201,9 @@
 	#section2 .right_recom dd p a.more{clear:both; bottom:0; font-size:13px; text-decoration:underline; }
 	
 		
- 	.card {position: relative; float:left;  width: 48%; display: block; margin-right: 10px; }
+ 	.card {position: relative; float:left;  width: 46%; display: block;0 1%; }
 	.card__desc{font-size:1rem;  height:3rem;}
+	.card__button{display:block; width:80%;
 
 }
 
@@ -175,7 +215,12 @@
 @media all and (max-width:640px){
 
 	body,html {font-size:13px;}
-	.card{width:48%; margin-left:auto; margin-right:2%;}
+	.slider .jquery-reslider .slider-dots { bottom: 50%;}
+	.card{width:48%; margin-left:auto; margin:30px 1%;}
+	.card__desc{display:none;}
+	.card__image{height:100%; overflow:hidden; width:100%;}
+	.ad_num li dd.ad_tit{font-size:1.2rem;}
+	.ad_num li dd.ad_num{font-size:3rem;}
 
 }
 
@@ -183,7 +228,7 @@
 	@media ~460px
 *******************************************************************************/
 @media all and (max-width:460px){
-
+	
 
 }
 
