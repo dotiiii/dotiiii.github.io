@@ -101,14 +101,16 @@
 
 /* Section4 - 부가서비스 */
 #section4 {padding-top:80px; background: url('../img/service_bg.jpg') center top no-repeat; background-position: 50% 0;  }
-#section4 h2, #section4 h3{color:#fff;}
+#section4 h2, #section4 h3{color:#fff; width:100%;}
+#section4 .secIn_con {position:relative; overflow:hidden;}
+#section4 .service_tit{position:absolute; text-align:left;  left:52%; width:600px; margin:0 auto; top:140px;}
 
 
 /* Section5 - 홍보 */
 #section5 {padding-top:80px; background: url('../img/ad_bg.jpg') center top no-repeat; background-position: 50% 50%;  background-size: cover;  }
 #section5 .secIn_con{ width:100%;}
 #section5 h2, #section5 h2{color:#fff; letter-spacing:-2pt; background:url('../img/title_line_w.png') center bottom no-repeat; padding-bottom:25px;}
-#section5  video {margin-top:40px; width:100%;  max-width:730px;  height:auto; margin-bottom:90px; -webkit-box-shadow: 0px 27px 42px -15px rgba(0,0,0,0.75);-moz-box-shadow: 0px 27px 42px -15px rgba(0,0,0,0.75);box-shadow: 0px 27px 42px -15px rgba(0,0,0,0.75);}
+#section5  video {background:#000; margin-top:40px; width:100%;  max-width:730px;  height:auto; margin-bottom:90px; -webkit-box-shadow: 0px 27px 42px -15px rgba(0,0,0,0.75);-moz-box-shadow: 0px 27px 42px -15px rgba(0,0,0,0.75);box-shadow: 0px 27px 42px -15px rgba(0,0,0,0.75);}
 
 .ad_num{width:100%; max-width:900px; margin:0 auto; color:#fff;}
 
@@ -121,8 +123,16 @@
 
 
 /* Section6 - Event */
-#section6 {padding-top:80px; background: url('../img/event_bg.jpg') center top no-repeat; background-position: 50% 50%;  background-size: cover; }
+#section6 {padding-top:80px; background: url('../img/event_bg.jpg') center top no-repeat; background-position: 50% 50%;  background-size: cover; max-height:600px;   }
 #section6 h3{padding-top:20px; padding-bottom:40px;}
+#section6 .secIn_con{ width:100%; max-width:1100px; margin:0 auto;}
+#section6 .secIn_con li{float:left; width:31.3%; margin-right:3%; text-align:left; padding-bottom:30px;}
+#section6 .secIn_con li:last-child{margin-right:0;}
+#section6 .secIn_con li dt {padding-bottom:30px;}
+#section6 .secIn_con li dt img{width:100%; max-width:340px; max-height:260px;}
+#section6 .secIn_con li dd p.event_tit{color:#000; font-size:1.2em; padding-bottom:.3em;}
+#section6 .secIn_con li dd p.event_con{ padding-bottom:20px;}
+#section6 .secIn_con li dd.date {background:url('../img/event_time.png') left 3px no-repeat; padding-left:20px; font-size:12px;}
 
 
 /* footer */
@@ -136,7 +146,7 @@
 #footer .copyright p{float:left; padding-right:2em;}
 #footer .copyright .copy01 li{float:left; color:#fff; padding-right:2em; }
 #footer .copyright .copy01 li a{clear:both; color:#fff;}
-#footer .copyright .copy02 {float:left; width:80%; margin-top:1em;}
+#footer .copyright .copy02 {float:left; width:100%; margin-top:1em;}
 
 .sns{float:right; position:absolute; right:0; top:4em;}
 .sns li {float:left; padding-right:10px;}
@@ -153,6 +163,9 @@
 	.card:nth-child(5){margin-right:0;}
 	.card__image {position: relative; overflow:hidden; height: 300px; margin-bottom: 40px;  width:100%;}
 	#footer .sns {position:relative; display:block; clear:both; top:0;}
+	
+	#section4 .service_tit{position:relative; text-align:center;  left:0; width:100%; margin:0 auto; top:0;}
+	
 }
 
 
@@ -176,6 +189,8 @@
 	
 	.card {position: relative; overflow:hidden; width: 23%; height:200px display: table_cell; margin: 40px 1%; margin-bottom:20px; text-align: center; }
 	.card__image {position: relative; overflow:hidden; height: 300px; margin-bottom: 40px;  width:100%;}
+	
+	
 	
 	.ad_num li{text-align:center; }
 	.ad_num li:first-child dl{padding-right:0;  }
@@ -251,6 +266,8 @@
 	.ad_num li dt img{width:50%}
 	.ad_num li dd.ad_tit{font-size:1.2rem;}
 	.ad_num li dd.ad_num{font-size:2.8rem;}
+	
+
 
 }
 
@@ -258,7 +275,7 @@
 	@media ~460px
 *******************************************************************************/
 @media all and (max-width:460px){
-	
+	#section6 .secIn_con li{float:none; width:96%; margin-right:2%; margin-left:2% }
 
 }
 
