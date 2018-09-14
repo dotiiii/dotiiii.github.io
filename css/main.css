@@ -102,7 +102,7 @@
 /* Section4 - 부가서비스 */
 #section4 {padding-top:80px; background: url('../img/service_bg.jpg') center top no-repeat; background-position: 50% 0;  }
 #section4 h2, #section4 h3{color:#fff; width:100%;}
-#section4 .secIn_con {position:relative; overflow:hidden;}
+#section4 .secIn_con {position:relative; overflow:hidden; height:800px !important;}
 #section4 .service_tit{position:absolute; text-align:left;  left:52%; width:600px; margin:0 auto; top:140px;}
 
 
@@ -128,8 +128,8 @@
 #section6 .secIn_con{ width:100%; max-width:1100px; margin:0 auto;}
 #section6 .secIn_con li{float:left; width:31.3%; margin-right:3%; text-align:left; padding-bottom:30px;}
 #section6 .secIn_con li:last-child{margin-right:0;}
-#section6 .secIn_con li dt {padding-bottom:30px;}
-#section6 .secIn_con li dt img{width:100%; max-width:340px; max-height:260px;}
+#section6 .secIn_con li dt {padding-bottom:30px; width:100%;}
+#section6 .secIn_con li dt img{width:96%; padding:0 2%}
 #section6 .secIn_con li dd p.event_tit{color:#000; font-size:1.2em; padding-bottom:.3em;}
 #section6 .secIn_con li dd p.event_con{ padding-bottom:20px;}
 #section6 .secIn_con li dd.date {background:url('../img/event_time.png') left 3px no-repeat; padding-left:20px; font-size:12px;}
@@ -159,6 +159,9 @@
 	@media ~1024px
 *******************************************************************************/
 @media all and (max-width:1024px){
+	
+	.cd-section{ height: 100vh;}
+	
 	.card {position: relative; overflow:hidden; width: 20%; height:200px display: table_cell; margin: auto; margin-top:40px; margin-right:2%; margin-bottom:20px; text-align: center; }
 	.card:nth-child(5){margin-right:0;}
 	.card__image {position: relative; overflow:hidden; height: 300px; margin-bottom: 40px;  width:100%;}

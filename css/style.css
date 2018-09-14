@@ -413,9 +413,13 @@ Content Sections - basic style
   /* vertically align its content*/
   display: table;
   width: 100%;
-  height: 100vh;
   background: #2257af;
 }
+
+#section1,  #section2,  #section3, #section5{ height: 100vh;}
+
+
+
 .cd-section:nth-of-type(2) {
   background-color: #fff;
 }
@@ -451,6 +455,7 @@ Content Sections - basic style
     font-size: 2rem;
   }*/
 }
+
 
 .cd-scroll-down {
   position: absolute;
