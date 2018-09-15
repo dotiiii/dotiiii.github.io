@@ -65,7 +65,7 @@
             // [string|object]
             // Selector for children of `itemContainer` to flip
 
-            start: '1',
+            start: 'center',
             // ['center'|number]
             // Zero based index of the starting item, or use 'center' to start in the middle
 
@@ -73,7 +73,7 @@
             // [milliseconds]
             // Speed of the fade in animation after items have been setup
 
-            loop: true,
+            loop: false,
             // [true|false]
             // Loop around when the start or end is reached
 
